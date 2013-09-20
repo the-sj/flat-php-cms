@@ -1,0 +1,13 @@
+php_value short_open_tag 1
+
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?1=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?1=$1&2=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?1=$1&2=$2&3=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?1=$1&2=$2&3=$3&4=$4
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?1=$1&2=$2&3=$3&4=$4&5=$5
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?1=$1&2=$2&3=$3&4=$4&5=$5&6=$6
+Options All
+Allow from all
+# php_value error_reporting E_ALL
+
